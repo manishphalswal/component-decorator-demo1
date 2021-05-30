@@ -1,0 +1,8 @@
+<h2>Class Binding Demo</h2>
+
+<div class="bold curved important"
+[class.highlight] = "highlightBackground">
+    This is important text for class binding demo.
+</div>
+
+<button (click)="highlightBackground = !highlightBackground">Toggle text Background</button>

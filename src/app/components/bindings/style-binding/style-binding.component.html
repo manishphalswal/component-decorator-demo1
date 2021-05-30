@@ -1,0 +1,26 @@
+<h2>Style Binding Demo</h2>
+
+<div [style.background-color]="'yellow'">This is first sample text</div>
+
+<div [style.color]="'red'">This is second sample text</div>
+
+<hr>
+<button  [style.color]="toggleColor ? 'red' : 'green'" (click)="toggleColor = !toggleColor">Click to change my color</button>
+
+<div [style.background-color]="'yellow'"
+    [style.fontWeight]="'bold'"
+>
+    This is third sample text
+</div>
+<hr>
+<div [style.fontSize.%]="'50'">
+    Font size in %
+</div>
+
+<div [style.fontSize.px]="'30'">
+    Font size in px
+</div>
+
+<div [style.fontSize.em]="'5'">
+    Font size in em
+</div>

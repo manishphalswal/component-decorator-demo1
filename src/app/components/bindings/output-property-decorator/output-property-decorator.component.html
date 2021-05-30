@@ -1,0 +1,15 @@
+<h2>@Output() Property Demo</h2>
+
+<p>Counter value is : <span [class]="classType"> {{ counter }} </span></p>
+
+<!-- <app-output-prop-dec-child (counterEvent) = "updateCounter($event)"></app-output-prop-dec-child> --> <!--Commented for two way data binding-->
+
+<app-output-prop-dec-child [(counter)] = "counter"></app-output-prop-dec-child> <!--Added for two way data binding-->
+
+
+<hr>
+
+<h2>Two way data binding Demo</h2>
+<input type="text" [(ngModel)]="title">
+
+<p>This is title of form: {{ title }}</p>
